@@ -6,10 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct Home: View {
+    @AppStorage("log_status") private var logStatus: Bool = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            Button("Logout") {
+                try? Auth.auth().signOut()
+                logStatus = false
+            }
+            .navigationTitle("Home")
+        }
     }
 }
 

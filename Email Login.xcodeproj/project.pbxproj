@@ -11,6 +11,12 @@
 		FA951EFB2B9539A700858B4A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA951EFA2B9539A700858B4A /* ContentView.swift */; };
 		FA951EFD2B9539AD00858B4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA951EFC2B9539AD00858B4A /* Assets.xcassets */; };
 		FA951F002B9539AD00858B4A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA951EFF2B9539AD00858B4A /* Preview Assets.xcassets */; };
+		FA951F162B953B3200858B4A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = FA951F152B953B3200858B4A /* FirebaseAuth */; };
+		FA951F182B953B3C00858B4A /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FA951F172B953B3C00858B4A /* Lottie */; };
+		FA951F1A2B953D4700858B4A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FA951F192B953D4700858B4A /* GoogleService-Info.plist */; };
+		FA951F1D2B953D9600858B4A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA951F1C2B953D9600858B4A /* Login.swift */; };
+		FAED6B2B2B965E1B00855CF9 /* EmailAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = FAED6B2A2B965E1A00855CF9 /* EmailAnimation.json */; };
+		FAED6B2D2B9663BD00855CF9 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED6B2C2B9663BD00855CF9 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +25,10 @@
 		FA951EFA2B9539A700858B4A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FA951EFC2B9539AD00858B4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FA951EFF2B9539AD00858B4A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FA951F192B953D4700858B4A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FA951F1C2B953D9600858B4A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		FAED6B2A2B965E1A00855CF9 /* EmailAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = EmailAnimation.json; sourceTree = "<group>"; };
+		FAED6B2C2B9663BD00855CF9 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA951F162B953B3200858B4A /* FirebaseAuth in Frameworks */,
+				FA951F182B953B3C00858B4A /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +49,7 @@
 			children = (
 				FA951EF72B9539A700858B4A /* Email Login */,
 				FA951EF62B9539A700858B4A /* Products */,
+				FA951F142B953B3200858B4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,10 +64,13 @@
 		FA951EF72B9539A700858B4A /* Email Login */ = {
 			isa = PBXGroup;
 			children = (
+				FA951F1B2B953D7800858B4A /* View */,
 				FA951EF82B9539A700858B4A /* Email_LoginApp.swift */,
 				FA951EFA2B9539A700858B4A /* ContentView.swift */,
 				FA951EFC2B9539AD00858B4A /* Assets.xcassets */,
 				FA951EFE2B9539AD00858B4A /* Preview Content */,
+				FA951F192B953D4700858B4A /* GoogleService-Info.plist */,
+				FAED6B2A2B965E1A00855CF9 /* EmailAnimation.json */,
 			);
 			path = "Email Login";
 			sourceTree = "<group>";
@@ -65,6 +81,22 @@
 				FA951EFF2B9539AD00858B4A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FA951F142B953B3200858B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA951F1B2B953D7800858B4A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA951F1C2B953D9600858B4A /* Login.swift */,
+				FAED6B2C2B9663BD00855CF9 /* Home.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +115,10 @@
 			dependencies = (
 			);
 			name = "Email Login";
+			packageProductDependencies = (
+				FA951F152B953B3200858B4A /* FirebaseAuth */,
+				FA951F172B953B3C00858B4A /* Lottie */,
+			);
 			productName = "Email Login";
 			productReference = FA951EF52B9539A700858B4A /* Email Login.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +147,10 @@
 				Base,
 			);
 			mainGroup = FA951EEC2B9539A700858B4A;
+			packageReferences = (
+				FA951F062B953A6700858B4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				FA951F112B953B0B00858B4A /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
 			productRefGroup = FA951EF62B9539A700858B4A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +167,8 @@
 			files = (
 				FA951F002B9539AD00858B4A /* Preview Assets.xcassets in Resources */,
 				FA951EFD2B9539AD00858B4A /* Assets.xcassets in Resources */,
+				FA951F1A2B953D4700858B4A /* GoogleService-Info.plist in Resources */,
+				FAED6B2B2B965E1B00855CF9 /* EmailAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA951F1D2B953D9600858B4A /* Login.swift in Sources */,
 				FA951EFB2B9539A700858B4A /* ContentView.swift in Sources */,
+				FAED6B2D2B9663BD00855CF9 /* Home.swift in Sources */,
 				FA951EF92B9539A700858B4A /* Email_LoginApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +388,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FA951F062B953A6700858B4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.21.0;
+			};
+		};
+		FA951F112B953B0B00858B4A /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FA951F152B953B3200858B4A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA951F062B953A6700858B4A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		FA951F172B953B3C00858B4A /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FA951F112B953B0B00858B4A /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FA951EED2B9539A700858B4A /* Project object */;
 }

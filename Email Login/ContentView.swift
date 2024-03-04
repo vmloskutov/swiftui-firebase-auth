@@ -6,16 +6,19 @@
 //
 
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
+    @AppStorage("log_status") private var logStatus: Bool = false
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        if logStatus {
+            /// Home View
+            Home()
+        } else {
+            Login()
         }
-        .padding()
+        
     }
 }
 
